@@ -1,5 +1,10 @@
 /* Question : Given three strings A, B, C
- * Check whether C is interleaving of A and B
+ * Check whether C is interleaving of A and B.
+ * Solution: First check length of A + length of B should be equal to C
+ * Take three indices i,j,k and start scanning s3 s2 and s1 from back 
+ * if s3[i]=s1[j] then increase j and i
+ * else if s3[i]=s2[k] then increase k and i
+ * else print not interleaving.
 */
 
 #include<iostream>
